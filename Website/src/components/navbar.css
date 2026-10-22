@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+    width: 100%;
+    margin-left: 0px;
+    margin: 0;
+}
+.navbar{
+    background-color: green;
+    padding: 20px 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+z-index: 9999;
+}   
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+   padding-right: 100px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+    color: yellow;
+}
+
+.head {
+  text-align: center;
+  margin-top: 50px;
+}
