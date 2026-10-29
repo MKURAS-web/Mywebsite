@@ -1,42 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import Home from './components/home';
 import Navbar from './components/navbar';
-import AppCard from './components/card';
-import AppCard1 from './components/card1';
-import backgroundImage from './assets/back.jpg';
+import Hero from './components/hero';
+import About from './components/about';
+import Skills from './components/skills';
+import Projects from './components/projects';
+import Experience from './components/experience';
+import Contact from './components/contact';
 import Footer from './components/footer';
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Home />
-      <div className="hero">
-      <img src={backgroundImage} alt="background" className="image" />
-      <div className="hero-text">
-        <h1>Welcome to our website</h1>
-        <p>We create amazing digital experiences.</p>
-      </div>
-      <div className="hero-buttons">
-        <button className="hero-button">Get Started</button>
-        <button className="hero-button">Learn More</button>
-        </div>
-      </div>
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      return savedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  });
 
-      <div className="card-container">
-      <AppCard />
-      <AppCard1 />
-      </div>
-      <div className="head">
-        <h1>Hello World!</h1>
-      </div>
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  return (
+    <div className="app">
+      <Navbar theme={theme} onToggleTheme={toggleTheme} />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
       <Footer />
     </div>
-
   );
 }
-
-
 
 export default App;

@@ -1,61 +1,82 @@
 .footer {
-  background-color: #001f3f;
-  color: white;
-  padding: 50px 60px 20px;
+  background: var(--navy-950);
+  border-top: 1px solid var(--line);
+  padding: 60px 0 28px;
 }
 
-.footer-content {
+.footer-grid {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 36px;
 }
 
-.footer-content h2,
-.footer-content h3 {
-  margin-bottom: 15px;
+.footer-brand p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 12px;
+  max-width: 300px;
 }
 
-.footer-content p {
-  color: #d9e6f2;
+.footer h4 {
+  font-size: 1.05rem;
+  margin-bottom: 16px;
 }
 
-.footer-content a {
-  display: block;
-  color: white;
+.footer-links {
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--muted);
   text-decoration: none;
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  transition: color 0.3s ease;
 }
 
-.footer-content a:hover {
-  color: #8ecae6;
+.footer-links a:hover {
+  color: var(--accent);
 }
 
-.footer-bottom {
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.social-icons {
+.socials {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  gap: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.social-icons a {
+.social-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+  color: var(--text);
+  transition: all 0.3s ease;
 }
 
-.image {
-  width: 25px;
-  height: 25px;
+.social-btn:hover {
+  background: var(--accent);
+  color: var(--navy-950);
+  transform: translateY(-3px);
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 
-.image:hover {
-  transform: scale(1.2);
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
