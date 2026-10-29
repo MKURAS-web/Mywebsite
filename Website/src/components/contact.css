@@ -103,9 +103,6 @@
 .cta-band-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/img3.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .cta-band::before {

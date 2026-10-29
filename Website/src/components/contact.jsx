@@ -108,7 +108,11 @@ function Contact() {
         </div>
 
         <div className="cta-band">
-          <div className="cta-band-bg" aria-hidden="true" />
+          <div
+          className="cta-band-bg"
+          aria-hidden="true"
+          style={{ backgroundImage: `url(${ctaBg})` }}
+        />
           <h2>Ready to build something great?</h2>
           <p>
             I am currently open to Junior Software Developer, Web Developer, Backend Developer or
