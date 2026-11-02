@@ -43,7 +43,7 @@ function About() {
               <span className="fact-icon">📞</span>
               <div>
                 <strong>Phone</strong>
-                <span>+255 687 987 943 / +0613 318 263</span>
+                <span>+255 687 987 943 / +255 613 318 263</span>
               </div>
             </div>
             <div className="fact">

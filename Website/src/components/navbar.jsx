@@ -26,7 +26,7 @@ function Navbar({ theme, onToggleTheme }) {
           aria-label="Toggle dark and light mode"
         >
           <span className="nav-logo-icon">{isDark ? '🌙' : '☀️'}</span>
-          EM<span>.</span>
+          EME<span>.</span>
         </button>
 
         <button

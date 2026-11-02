@@ -9,12 +9,12 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <span className="hero-badge">Computer Scientist · Software Developer</span>
-          <h1 className="hero-title">Eliud Mkuras</h1>
+          <h1 className="hero-title">Eliud Mkuras Evelian</h1>
           <p className="hero-tagline">Building smart software for real world problems.</p>
           <p className="hero-description">
             Computer Science graduate from the University of Dar es Salaam with hands-on
             experience in software development, web technologies, databases, networking and IT
-            support. Skilled in PHP, JavaScript, React, Laravel, Java and MySQL, with a passion
+            support. Skilled in PHP, JavaScript, React, Laravel, Java, c programming and MySQL, with a passion
             for building reliable digital products.
           </p>
           <div className="hero-ctas">

@@ -23,7 +23,7 @@ const projects = [
     description:
       'Participated in software testing and the development of the company brochure, later deployed on Vercel.',
     tags: ['Testing', 'Vercel'],
-    link: 'https://srks.vercel.app/',
+    link: 'https://company-brochure-srks.vercel.app/',
   },
 ];
 
