@@ -4,9 +4,7 @@ import './experience.css';
 const experiences = [
   {
     date: '2026',
-    title: 'Software Development & Testing',
-    org: 'MsimTech · Imagine Company Limited',
-    location: 'Sky City, near Mlimani City',
+    title: 'Software Development & testing
     description:
       'Participated in software development and testing activities, contributed to building the company website (jawtets.com) and the company brochure, and completed the final year project on Access Control.',
     points: [
