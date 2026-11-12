@@ -8,7 +8,7 @@ const experiences = [
     description:
       'Participated in software development and testing activities, contributed to building the company website (jawtets.com) and the company brochure, and completed the final year project on Access Control.',
     points: [
-      'Participated in software testing at MsimTech.',
+      'Participated in software development and testing',
       'Developed the company website such as jawtets.com and the company brochure.',
       'Completed the final year project titled “Reintroducing Smartness in University ID Card using Access Control System”.',
     ],
