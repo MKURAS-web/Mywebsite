@@ -4,7 +4,7 @@ import './experience.css';
 const experiences = [
   {
     date: '2026',
-    title: 'Software Development
+    title: 'Software Developmen',
     description:
       'Participated in software development and testing activities, contributed to building the company website (jawtets.com) and the company brochure, and completed the final year project on Access Control.',
     points: [
